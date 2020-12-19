@@ -1,0 +1,9 @@
+#! /usr/bin/python3 # gives path for python3 functionality
+
+import os #imports operating system functionality
+
+sudo_password = 'B@tm@N23' #OS password for sudo functionality as a variable
+command = 'apt-get update -y' #Command to be pushed to OS
+os.system('echo %s|sudo -S %s' % (sudo_password, command)) #Runs command with sudo to be used
+command = 'apt-get upgrade -y' #Command to be pushed to OS
+os.system('echo %s|sudo -S %s' % (sudo_password, command)) #Runs command with sudo to be used
